@@ -9,7 +9,7 @@ namespace BlazorMongoImagesCRUD.Repositories
 {
     public class ImagesRepository : IImageService
     {
-        internal MongoDBRepository _repo = new();
+        internal MongoDBRepository _repo;
         public IMongoCollection<StorableImage> Collection;
         internal IGridFSBucket bucket;
 
